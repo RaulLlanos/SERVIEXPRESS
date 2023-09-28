@@ -1,18 +1,20 @@
-<div align="center">
-  <img src="#" alt="Logo SERVIEXPRESS"/>
-</div>
-
-<div class="ion-margin marginBottom">
-  <div>
-    <label for="segment">Select an option:</label>
-
+<div id="container">
+  <div align="center">
+    <img src="#" alt="Logo SERVIEXPRESS"/>
   </div>
-</div>
 
-<div class="marginBottom">
-  <button (click)="segmentChanged('1')" [ngClass]="{ 'active': segmentValue === '1' }">Log In</button>
-  <button (click)="segmentChanged('2')" [ngClass]="{ 'active': segmentValue === '2' }">Sign Up</button>
-</div>
+  <div class="ion-margin marginBottom">
+    <div>
+      <label for="segment">Select an option:</label>
 
-<app-sign-in *ngIf="segmentValue === '1'"></app-sign-in>
-<app-sign-up *ngIf="segmentValue === '2'"></app-sign-up>
+    </div>
+  </div>
+
+  <div class="marginBottom">
+    <button (click)="segmentChanged('1')" [ngClass]="{ 'active': segmentValue === '1' }">Log In</button>
+    <button (click)="segmentChanged('2')" [ngClass]="{ 'active': segmentValue === '2' }">Sign Up</button>
+  </div>
+
+  <app-sign-in *ngIf="segmentValue === '1'"></app-sign-in>
+  <app-sign-up *ngIf="segmentValue === '2'"></app-sign-up>
+</div>
