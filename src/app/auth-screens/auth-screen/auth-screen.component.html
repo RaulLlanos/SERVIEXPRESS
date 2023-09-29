@@ -4,7 +4,7 @@
   </div>
   <div class="contenedorPadre flex-column justify-items-center
   align-items-center expand-lg">
-    <div class="segment">
+    <div class="segment" style="background-color: rgba(235, 71, 71, 0.507)">
       <section class="sectionButton">
         <button (click)="segmentChanged('1')" [ngClass]="{ 'active': segmentValue === '1' }">
           Log In
@@ -13,9 +13,10 @@
           Sign Up
         </button>
       </section>
+      <div class="formContainer">
+      <app-sign-in *ngIf="segmentValue === '1'"></app-sign-in>
+      <app-sign-up *ngIf="segmentValue === '2'"></app-sign-up>
+      </div>
     </div>
-
-    <app-sign-in *ngIf="segmentValue === '1'"></app-sign-in>
-    <app-sign-up *ngIf="segmentValue === '2'"></app-sign-up>
   </div>
 </body>
