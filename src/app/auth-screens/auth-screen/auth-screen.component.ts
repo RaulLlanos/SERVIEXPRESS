@@ -12,7 +12,6 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
   imports: [CommonModule, SignInComponent, SignUpComponent, ResetPasswordComponent],
 })
 export class AuthScreenComponent {
-
   segmentValue= '1';
 
   segmentChanged(selectedValue: string) {
