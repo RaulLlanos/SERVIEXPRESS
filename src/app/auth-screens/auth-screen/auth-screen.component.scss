@@ -1,15 +1,23 @@
-<<<<<<< HEAD
-=======
-#container{
+body{
   background-image: url('../../../assets/img/bg.jpg');
   height: 100vh;
   width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
->>>>>>> 8652dd0f9081284a555b2533ad2feeebbeb97dbb
-.marginBottom {
-  margin-bottom: 5vh;
+  .contenedorPadre{
+    margin-top: 8vh;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 0 var(#92949c);
+    .segment{
+      background-color: black;
+      border-radius: 20px;
+      border: 1px solid white;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      .sectionButton{
+        border-radius: 0px;
+      }
+    }
+  }
 }
